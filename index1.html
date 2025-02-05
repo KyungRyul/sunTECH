@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>썬테크 - 지속 가능한 내일</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            position: relative;
+            background: url('./image/tmp_main.png') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .company-info, .links {
+            flex: 1;
+            margin: 20px;
+        }
+        .company-info img {
+            max-width: 150px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .links h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .links ul li {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1>물이 필요한 순간,</h1>
+            <p>“물의 흐름으로 지속 가능한 내일을 만들어갑니다.”</p>
+        </div>
+    </header>
+    <section class="content">
+        <div class="company-info">
+            <img src="./image/business_card.jpeg" alt="썬테크 로고"  onclick="javascript:location.href='index.html'">
+            <p><strong>Head office</strong></p>
+            <p>87, Hwamyeong-daero, Buk-gu, Busan, South Korea<br>(Hyundai Apartment), Building 102, Unit 204</p>
+        </div>
+        <div class="links">
+            <div>
+                <h3>소개</h3>
+                <ul>
+                    <li>썬테크 이야기</li>
+                </ul>
+            </div>
+            <div>
+                <h3>솔루션</h3>
+                <ul>
+                    <li>빌딩서비스 솔루션</li>
+                    <li>유지관리 솔루션</li>
+                    <li>수처리 솔루션</li>
+                    <li>인터스트리 솔루션</li>
+                </ul>
+            </div>
+            <div>
+                <h3>서비스</h3>
+                <ul>
+                    <li>부품 공급서비스</li>
+                    <li>시운전 서비스</li>
+                    <li>수리서비스</li>
+                    <li>유지보수서비스</li>
+                </ul>
+            </div>
+            <div>
+                <h3>법률 및 정책</h3>
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보 처리방침</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
