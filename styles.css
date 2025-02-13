@@ -36,7 +36,7 @@ section {
 }
 
 .footer {
-    max-width: 1200px;
+    max-width: 80%;
     margin: auto;
     padding: 20px;
     display: flex;
@@ -58,7 +58,7 @@ section {
 
 
 .company-info{
-    flex: 1;
+    flex: 2;
     margin: 20px;
 }
 .company-info img {
@@ -91,23 +91,6 @@ section {
     height: 30px;
 }
 
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-    }
-
-    .links {
-        margin: 20px;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 1280px) {
-    /* .footer {
-        flex-direction: column;
-    } */
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -132,4 +115,16 @@ text-align: right; /* 이미지 오른쪽 정렬 */
 .image img {
 max-width: 100%; /* 부모 요소보다 커지지 않도록 설정 */
 height: auto; /* 비율 유지 */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .links {
+        margin: 20px;
+        flex-direction: column;
+    }
 }
